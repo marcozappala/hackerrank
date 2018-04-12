@@ -33,8 +33,6 @@ public class ArraysDS {
         a[descendingIndex] = swappingSupport;
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
-
     public static int[] execute(String[] args) throws IOException {
 
         int[] arrayToReverse = getArrayToReverse(args);
