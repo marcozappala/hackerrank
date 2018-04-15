@@ -1,3 +1,5 @@
+package datastructures;
+
 import static junit.framework.TestCase.assertTrue;
 import org.junit.Before;
 import org.junit.Test;

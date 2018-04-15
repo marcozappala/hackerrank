@@ -1,16 +1,15 @@
-package TwoDArraysDs;
+package datastructures.twodarraysds;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import datastructures.TwoDArraysDS.TwoDArraysDS;
+
+import datastructures.twodarraysds.TwoDArraysDS;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)

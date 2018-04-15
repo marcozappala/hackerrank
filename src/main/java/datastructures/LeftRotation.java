@@ -1,3 +1,5 @@
+package datastructures;
+
 public class LeftRotation {
   public LeftRotation(int[] array, int numberOfRotations) {
   }
