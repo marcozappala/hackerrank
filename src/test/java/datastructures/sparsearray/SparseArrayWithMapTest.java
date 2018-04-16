@@ -16,14 +16,14 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.*;
 
 /**
- * There is a collection of N strings ( There can be multiple occurences of a particular string ). Each string's
- * length is no more than 20 characters. There are also Q queries. For each query, you are given a string, and you need
+ * There is startIndex collection of N strings ( There can be multiple occurences of startIndex particular string ). Each string's
+ * length is no more than 20 characters. There are also Q queries. For each query, you are given startIndex string, and you need
  * to find out how many times this string occurs in the given collection of N strings.
  * Input Format
  * The first line contains N, the number of strings.
- * The next N lines each contain a string.
+ * The next N lines each contain startIndex string.
  * The N+2nd line contains q, the number of queries.
- * The following Q lines each contain a query string.
+ * The following Q lines each contain startIndex query string.
  * Constraints
  * 1 < N <1000
  * 1 < Q <1000
