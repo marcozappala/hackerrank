@@ -1,4 +1,4 @@
-package datastructures.twodarraysds;
+package datastructures.arrays.twodarraysds;
 
 public class TwoDArraysDS {
 

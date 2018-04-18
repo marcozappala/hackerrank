@@ -1,6 +1,6 @@
-package datastructures;
+package datastructures.arrays;
 
-import datastructures.arraymanipulation.ArrayOperation;
+import datastructures.arrays.arraymanipulation.ArrayOperation;
 
 public class ArrayManipulation {
     private int[] data;

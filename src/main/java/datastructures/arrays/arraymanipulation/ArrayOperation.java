@@ -1,4 +1,4 @@
-package datastructures.arraymanipulation;
+package datastructures.arrays.arraymanipulation;
 
 public class ArrayOperation {
     public int startIndex, endIndex, valueToAdd;

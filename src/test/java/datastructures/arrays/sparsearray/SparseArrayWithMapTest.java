@@ -1,17 +1,14 @@
-package datastructures.sparsearray;
+package datastructures.arrays.sparsearray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
 
-import datastructures.sparsearray.SparseArray;
-
-import static datastructures.sparsearray.SparseArrayTesUtils.*;
+import static datastructures.arrays.sparsearray.SparseArrayTesUtils.*;
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.*;
 

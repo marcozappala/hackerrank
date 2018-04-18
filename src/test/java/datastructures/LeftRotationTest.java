@@ -1,6 +1,7 @@
 package datastructures;
 
 import static junit.framework.TestCase.assertTrue;
+import datastructures.arrays.LeftRotation;
 import org.junit.Before;
 import org.junit.Test;
 

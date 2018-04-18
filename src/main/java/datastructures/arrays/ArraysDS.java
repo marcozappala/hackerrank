@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.arrays;
 
 import java.io.IOException;
 import java.util.Scanner;

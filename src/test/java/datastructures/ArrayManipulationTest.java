@@ -1,9 +1,10 @@
 package datastructures;
 
+import datastructures.arrays.ArrayManipulation;
 import org.junit.Before;
 import org.junit.Test;
 
-import datastructures.arraymanipulation.ArrayOperation;
+import datastructures.arrays.arraymanipulation.ArrayOperation;
 
 import static junit.framework.TestCase.assertEquals;
 

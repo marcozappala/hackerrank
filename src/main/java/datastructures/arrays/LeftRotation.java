@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.arrays;
 
 public class LeftRotation {
   public LeftRotation(int[] array, int numberOfRotations) {

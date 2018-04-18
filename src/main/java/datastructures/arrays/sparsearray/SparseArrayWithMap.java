@@ -1,9 +1,8 @@
-package datastructures.sparsearray;
+package datastructures.arrays.sparsearray;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class SparseArrayWithMap extends SparseArray{
     private Map<String, Integer> mapOfOccurrences = new HashMap<>();

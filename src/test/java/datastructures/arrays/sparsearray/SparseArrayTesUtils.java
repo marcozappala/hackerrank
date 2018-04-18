@@ -1,4 +1,4 @@
-package datastructures.sparsearray;
+package datastructures.arrays.sparsearray;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import datastructures.ArraysDS;
+import datastructures.arrays.ArraysDS;
 
 import static junit.framework.TestCase.*;
 
