@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.arrays;
 
 import static junit.framework.TestCase.assertTrue;
 import datastructures.arrays.LeftRotation;

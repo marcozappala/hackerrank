@@ -10,7 +10,7 @@ public class ArrayManipulation {
     }
 
     public void performOperation(ArrayOperation firstOperation) {
-        for (int i = firstOperation.startIndex; i< firstOperation.endIndex; i++) {
+        for (int i = firstOperation.startIndex; i <= firstOperation.endIndex; i++) {
             data[i] = data[i] + firstOperation.valueToAdd;
             if (data[i] > max) {
                 max = data[i];

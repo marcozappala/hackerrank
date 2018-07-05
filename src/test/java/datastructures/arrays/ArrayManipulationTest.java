@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.arrays;
 
 import datastructures.arrays.ArrayManipulation;
 import org.junit.Before;
@@ -9,7 +9,7 @@ import datastructures.arrays.arraymanipulation.ArrayOperation;
 import static junit.framework.TestCase.assertEquals;
 
 public class ArrayManipulationTest {
-    int[] data = new int[5];
+    int[] data = new int[10];
     ArrayManipulation arrayManipulation = new ArrayManipulation(data);
 
     private ArrayOperation firstOperation;
@@ -20,21 +20,20 @@ public class ArrayManipulationTest {
 
     @Before
     public void setup() {
-        firstOperation = new ArrayOperation(1,2,100);
-        secondOperation = new ArrayOperation(2,5,100);
-        thirdOperation = new ArrayOperation(3,4,100);
-        thirdOperation = new ArrayOperation(3,6,100);
+        firstOperation = new ArrayOperation(1,5,3);
+        secondOperation = new ArrayOperation(4,8,7);
+        thirdOperation = new ArrayOperation(6,9,1);
     }
 
     @Test
     public void shouldPerformOperation() {
         arrayManipulation.performOperation(firstOperation);
-        assertEquals(100, arrayManipulation.getMax());
+        assertEquals(3, arrayManipulation.getMax());
     }
 
     @Test
     public void shouldPerformOperations() {
         arrayManipulation.performOperations(firstOperation, secondOperation, thirdOperation);
-        assertEquals(200, arrayManipulation.getMax());
+        assertEquals(10, arrayManipulation.getMax());
     }
 }
