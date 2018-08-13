@@ -1,6 +1,8 @@
 package datastructures.arrays;
 
-import datastructures.arrays.arraymanipulation.ArrayOperation;
+import java.util.List;
+
+import datastructures.arrays.arraymanipulation.Operation;
 
 public class ArrayManipulation {
     private int[] data;
@@ -9,7 +11,7 @@ public class ArrayManipulation {
         this.data=data;
     }
 
-    public void performOperation(ArrayOperation firstOperation) {
+    public void performOperation(Operation firstOperation) {
         for (int i = firstOperation.startIndex; i <= firstOperation.endIndex; i++) {
             data[i] = data[i] + firstOperation.valueToAdd;
             if (data[i] > max) {
@@ -23,8 +25,8 @@ public class ArrayManipulation {
         return max;
     }
 
-    public void performOperations(ArrayOperation... operations) {
-        for (ArrayOperation operation: operations) {
+    public void performOperations(List<Operation> operations) {
+        for (Operation operation: operations) {
             performOperation(operation);
         }
     }

@@ -1,39 +1,76 @@
 package datastructures.arrays;
 
-import datastructures.arrays.ArrayManipulation;
-import org.junit.Before;
+import static junit.framework.TestCase.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
-import datastructures.arrays.arraymanipulation.ArrayOperation;
+import datastructures.arrays.arraymanipulation.Operation;
 
-import static junit.framework.TestCase.assertEquals;
-
+@RunWith(Parameterized.class)
 public class ArrayManipulationTest {
-    int[] data = new int[10];
-    ArrayManipulation arrayManipulation = new ArrayManipulation(data);
 
-    private ArrayOperation firstOperation;
+  int[] data = new int[10];
 
-    private ArrayOperation secondOperation;
+  ArrayManipulation arrayManipulation = new ArrayManipulation(data);
 
-    private ArrayOperation thirdOperation;
+  private List<Operation> operations;
 
-    @Before
-    public void setup() {
-        firstOperation = new ArrayOperation(1,5,3);
-        secondOperation = new ArrayOperation(4,8,7);
-        thirdOperation = new ArrayOperation(6,9,1);
-    }
+  @Parameterized.Parameters
+  public static Collection data() {
+    ArrayList<Operation> first =  new ArrayList<Operation>();
+    first.add(new Operation(1, 5, 3));
+    first.add(new Operation(4, 8, 5000));
+    first.add(new Operation(6, 9, 1));
+    first.add(new Operation(1, 5, 3));
+    first.add(new Operation(1, 5, 3));
+    first.add(new Operation(4, 8, -30000));
+    first.add(new Operation(1, 5, 3));
+    first.add(new Operation(1, 5, 3));
+    first.add(new Operation(1, 5, 3));
 
-    @Test
-    public void shouldPerformOperation() {
-        arrayManipulation.performOperation(firstOperation);
-        assertEquals(3, arrayManipulation.getMax());
-    }
+    ArrayList<Operation> second =  new ArrayList<Operation>();
+    second.add(new Operation(1, 5, 3));
+    second.add(new Operation(4, 8, 7));
+    second.add(new Operation(6, 9, 1));
 
-    @Test
-    public void shouldPerformOperations() {
-        arrayManipulation.performOperations(firstOperation, secondOperation, thirdOperation);
-        assertEquals(10, arrayManipulation.getMax());
-    }
+    ArrayList<Operation> third =  new ArrayList<Operation>();
+    third.add(new Operation(1, 5, 3));
+    third.add(new Operation(4, 8, 7));
+    third.add(new Operation(6, 9, 1));
+
+
+
+    ArrayList<Operation>[][] prova = new ArrayList[][] {
+        { first },
+        { second },
+        { third }
+    };
+
+
+    return Arrays.asList(prova);
+  }
+
+  public ArrayManipulationTest(List<Operation> operations ) {
+    this.operations = operations;
+  }
+
+  @Test
+  public void shouldPerformOperation() {
+    arrayManipulation.performOperation(operations.get(0));
+    assertEquals(3, arrayManipulation.getMax());
+  }
+
+  @Test
+  public void shouldPerformOperations() {
+    arrayManipulation.performOperations(operations);
+    assertEquals(10, arrayManipulation.getMax());
+  }
+
 }

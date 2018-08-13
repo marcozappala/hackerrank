@@ -1,6 +1,6 @@
 package datastructures.arrays.arraymanipulation;
 
-public class ArrayOperation {
+public class Operation {
     public int startIndex, endIndex, valueToAdd;
 
     /**
@@ -10,7 +10,7 @@ public class ArrayOperation {
      * @param endIndexOneBased
      * @param valueToAdd
      */
-    public ArrayOperation(int startIndexOneBased, int endIndexOneBased, int valueToAdd) {
+    public Operation(int startIndexOneBased, int endIndexOneBased, int valueToAdd) {
         this.startIndex = startIndexOneBased-1;
         this.endIndex = endIndexOneBased-1;
         this.valueToAdd = valueToAdd;
